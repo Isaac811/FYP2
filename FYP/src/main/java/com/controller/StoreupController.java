@@ -80,7 +80,7 @@ public class StoreupController {
         EntityWrapper< StoreupEntity> ew = new EntityWrapper< StoreupEntity>();
  		ew.allEq(MPUtil.allEQMapPre( storeup, "storeup")); 
 		StoreupView storeupView =  storeupService.selectView(ew);
-		return R.ok("查询收藏表成功").put("data", storeupView);
+		return R.ok("Success!").put("data", storeupView);
     }
 
     @RequestMapping("/info/{id}")
